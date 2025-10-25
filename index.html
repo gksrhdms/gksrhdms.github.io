@@ -6,40 +6,45 @@
     </head>
     <body>
         <p></p>
-        <h1><font color="blue">Welcome to Goeun's ground!</font></h1>
+        <h1><font color="olive">Welcome to Goeun's ground!</font></h1>
         <p></p>
         <style>
             body {
                 background-color: #f0f0f0;
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
             }
             h1 {
                 text-align: center;
+                padding: 20px 0;
             }
             .gallery {
-                border: 2px solid orange;
+                border: 2px solid olive;
                 display: grid; /*반응형 그리드 설정*/
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-                gap: 15px; /* 이미지 사이의 간격 */
-                padding: 20px;
-                max-width: 1200px; /* 갤러리 최대 너비 설정 (선택 사항) */
+                gap: 2px; /* 이미지 사이의 간격 */
+                grid-template-columns: repeat(outo-fill, minmax(150px, 1fr));
+                padding: 2px;
                 margin: 0 auto; /* 중앙 정렬 */
+                background-color: #f0f0f0;
             }
             .gallery-item {
             overflow: hidden; /* 이미지가 아이템을 벗어나는 것을 방지 */
-            border-radius: 8px; /* 모서리 둥글게 (선택 사항) */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 (선택 사항) */
+            border-radius: 4px; /* 모서리 둥글게 (선택 사항) */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 (선택 사항) */
             }
             .gallery-item img {
                 width: 100%; /* 너비를 부모 요소(gallery-item)에 꽉 채웁니다. */
                 height: 100%; /* 높이를 부모 요소에 꽉 채웁니다. */
                 object-fit: cover; /* 이미지가 잘리지 않게 비율을 유지하며 채웁니다. */
                 display: block; /* 이미지 하단의 불필요한 공백 제거 */
-                transition: transform 0.3s ease; /* 호버 효과를 위한 애니메이션 설정 */
+                transition: transform 0.3s ease, opacity 0.3s ease; /* 호버 효과를 위한 애니메이션 설정 */
             }
             /* 마우스 오버(Hover) 효과 (선택 사항) */
             .gallery-item img:hover {
-                transform: scale(1.05); /* 마우스 올리면 이미지를 살짝 확대 */
-                opacity: 0.8; /* 투명도 조절 */
+                transform: scale(1.03); /* 마우스 올리면 이미지를 살짝 확대 */
+                opacity: 0.9; /* 투명도 조절 */
             }
         </style>
         <div class="gallery">
