@@ -5,8 +5,65 @@
         <title> Goeun's Porfolio </title>
     </head>
     <body>
-        <h1>안녕하세요! 제 이름은 [한고은]입니다.</h1>
-        <p>이곳은 저의 경험을 담은 공간입니다.</p>
-        <p>Keeping Updating!</p>
+        <p></p>
+        <h1><font color="blue">Welcome to Goeun's ground!</font></h1>
+        <p></p>
+        <style>
+            body {
+                background-color: #f0f0f0;
+            }
+            h1 {
+                text-align: center;
+            }
+            .gallery {
+                border: 2px solid orange;
+                display: grid; /*반응형 그리드 설정*/
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+                gap: 15px; /* 이미지 사이의 간격 */
+                padding: 20px;
+                max-width: 1200px; /* 갤러리 최대 너비 설정 (선택 사항) */
+                margin: 0 auto; /* 중앙 정렬 */
+            }
+            .gallery-item {
+            overflow: hidden; /* 이미지가 아이템을 벗어나는 것을 방지 */
+            border-radius: 8px; /* 모서리 둥글게 (선택 사항) */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 (선택 사항) */
+            }
+            .gallery-item img {
+                width: 100%; /* 너비를 부모 요소(gallery-item)에 꽉 채웁니다. */
+                height: 100%; /* 높이를 부모 요소에 꽉 채웁니다. */
+                object-fit: cover; /* 이미지가 잘리지 않게 비율을 유지하며 채웁니다. */
+                display: block; /* 이미지 하단의 불필요한 공백 제거 */
+                transition: transform 0.3s ease; /* 호버 효과를 위한 애니메이션 설정 */
+            }
+            /* 마우스 오버(Hover) 효과 (선택 사항) */
+            .gallery-item img:hover {
+                transform: scale(1.05); /* 마우스 올리면 이미지를 살짝 확대 */
+                opacity: 0.8; /* 투명도 조절 */
+            }
+        </style>
+        <div class="gallery">
+            <img src="https://postimg.cc/kVXvZvNm.jpg">
+            <img src="https://i.postimg.cc/0KdLnCdw/Kakao-Talk-20251025-171117949.jpg">
+            <img src="https://i.postimg.cc/vDrFGQR2/Kakao-Talk-20251025-171117949-01.jpg">
+            <img src="https://i.postimg.cc/Rq75vMrY/Kakao-Talk-20251025-171117949-02.jpg">
+            <img src="https://i.postimg.cc/LhtKmHdx/Kakao-Talk-20251025-171117949-03.jpg">
+            <img src="https://i.postimg.cc/yWm47Vq5/Kakao-Talk-20251025-171117949-04.jpg">
+            <img src="https://i.postimg.cc/G9Fwbc0Z/Kakao-Talk-20251025-171117949-05.jpg">
+        </div>
+        <p></p>
+        <h2>안녕하세요! 저는 [한고은]입니다.이곳에 오신 것을 환영해요!</h2>
+        
+        <div>
+            <ul>
+                <b>▶Instagram</b>
+                <a href="https://www.instagram.com/euni.una?igsh=dnh2cmd0dGIxM3J2&utm_source=qr"></a>
+                <b>▶Blog</b>
+                <a href="https://blog.naver.com/iroofyou"></a>
+            </ul>
+        </div>
+        <p></p>
+        <h3>Keeping Updating...</h3>
+
     </body>
 </html>
